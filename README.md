@@ -1,1 +1,1 @@
-tanya ji kaise ho 
+Pixel Wizard 
