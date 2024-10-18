@@ -31,7 +31,7 @@ function loadMentors() {
         card.classList.add('mentor-card');
 
         card.innerHTML = `
-            <img src="${mentor.img}" alt="Mentor Image">
+            <img src="${mentor.img}" alt="Mentor Image" class="prof-image">
             <div class="mentor-info">
                 <p><strong>${mentor.name}</strong></p>
                 <p>${mentor.position}</p>
@@ -48,3 +48,55 @@ function loadMentors() {
 
 // Load mentors on page load
 document.addEventListener('DOMContentLoaded', loadMentors);
+
+// Toggling the star icon
+document.getElementById('star-icon').addEventListener('click', function() {
+    this.classList.toggle('far'); // Toggle the outline class
+    this.classList.toggle('fas'); // Toggle the filled class
+    this.classList.toggle('selected'); // Toggle the CSS for filled state
+});
+
+// Toggling the bell icon
+document.getElementById('bell-icon').addEventListener('click', function() {
+    this.classList.toggle('far'); // Toggle the outline class
+    this.classList.toggle('fas'); // Toggle the filled class
+    this.classList.toggle('selected'); // Toggle the CSS for filled state
+});
+
+// Sidebar item selection
+document.querySelectorAll('.sidebar-item').forEach(item => {
+    item.addEventListener('click', function() {
+        // Remove selected class from all items
+        document.querySelectorAll('.sidebar-item').forEach(i => {
+            i.classList.remove('selected');
+        });
+        
+        // Add selected class to the clicked item
+        this.classList.add('selected');
+    });
+});
+
+// Hamburger menu functionality
+document.getElementById('burger-menu').addEventListener('click', function() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('active'); // Toggle visibility of the sidebar
+});
+
+// Optional: If you want to handle clicking outside the sidebar to close it
+document.addEventListener('click', function(event) {
+    const sidebar = document.querySelector('.sidebar');
+    const burgerMenu = document.getElementById('burger-menu');
+
+    // Check if the click is outside both the sidebar and burger menu
+    if (!sidebar.contains(event.target) && !burgerMenu.contains(event.target)) {
+        sidebar.classList.remove('active'); // Close the sidebar
+    }
+});
+
+// Close sidebar when a link is clicked (useful for smaller screens)
+document.querySelectorAll('.sidebar-item').forEach(item => {
+    item.addEventListener('click', function() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.classList.remove('active');
+    });
+});
