@@ -17,7 +17,8 @@
         <a href="#">About</a>
         <a href="#">Contact</a>
       </div>
-      <button class="btn primary">Log In</button>
+      <!-- Updated Log In button -->
+      <button class="btn primary" onclick="goToLogin()">Log In</button>
     </div>
   </nav>
 
@@ -37,8 +38,7 @@
       </div>
       <div class="card">
         <h3>Step 2</h3>
-        <p>Match with a mentor based on </p>
-        <p>your interests.</p>
+        <p>Match with a mentor based on your interests.</p>
       </div>
       <div class="card">
         <h3>Step 3</h3>
@@ -69,6 +69,12 @@
     <p>&copy; 2024 Company Name. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- JavaScript to handle redirect -->
+  <script>
+    function goToLogin() {
+      window.location.href = "Login.html"; // Make sure Login.html is in the same folder
+    }
+  </script>
+
 </body>
 </html>
