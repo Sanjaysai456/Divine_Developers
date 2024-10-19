@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="mentorstyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+    <link rel="stylesheet" href="facultyDashboard.css">
 </head>
 <body>
     <!-- Sidebar -->
@@ -78,35 +79,51 @@
 
             <!-- White Box for Middle Section -->
             <div class="white-box">
-                <!-- Mentors Heading -->
-                <h2>Mentors</h2>
                 <!-- Mentors Cards -->
                 <div class="mentor-cards-container">
-                    <div class="mentor-card">
-                        <img src="https://via.placeholder.com/50" alt="Prof Image" class="prof-image">
-                        <div class="mentor-info">
-                            <p>Dr. Jane Smith</p>
-                            <p>Machine Learning</p>
+                    <div class="profile-card">
+                        <div class="profile-header">
+                            <img src="https://via.placeholder.com/50" alt="Profile" class="prof-image">
+                            <div class="mentor-details">
+                                <div class="mentor-title">
+                                    <h3>John Doe</h3>
+                                    <p>Software Engineering Mentor</p>
+                                </div>
+                                <div class="mentor-specs">
+                                    <p><strong>Years of Experience:</strong> 10</p>
+                                    <p><strong>Available Time Slots:</strong> 20</p>
+                                </div>
+                                <div class="skills">
+                                    <span>React</span><span>Node.js</span><span>Python</span><span>Machine Learning</span>
+                                </div>
+                            </div>
                         </div>
-                        <button class="book-session-btn">Book Session</button>
-                    </div>
-                    <div class="mentor-card">
-                        <img src="https://via.placeholder.com/50" alt="Prof Image" class="prof-image">
-                        <div class="mentor-info">
-                            <p>Prof. John Doe</p>
-                            <p>Web Development</p>
-                        </div>
-                        <button class="book-session-btn">Book Session</button>
-                    </div>
-                    <div class="mentor-card">
-                        <img src="https://via.placeholder.com/50" alt="Prof Image" class="prof-image">
-                        <div class="mentor-info">
-                            <p>Sarah Johnson</p>
-                            <p>Data Science</p>
-                        </div>
-                        <button class="book-session-btn">Book Session</button>
                     </div>
                 </div>
+            </div>
+
+            <div class="white-box">
+                <h2>Sessions Awaiting</h2>
+                <div class="sessions-awaiting-container">
+                    <div class="profile-card">
+                        <div class="profile-header">
+                            <img src="https://via.placeholder.com/50" alt="Profile" class="prof-image">
+                            <div class="mentor-details">
+                                <div class="mentor-title">
+                                    <h3>John Doe</h3>
+                                    <p>Software Engineering Mentor</p>
+                                </div>
+                                <div class="mentor-specs">
+                                    <p><strong>Years of Experience:</strong> 10</p>
+                                    <p><strong>Available Time Slots:</strong> 20</p>
+                                </div>
+                                <div class="skills">
+                                    <span>React</span><span>Node.js</span><span>Python</span><span>Machine Learning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
             </div>
         </div>
 
@@ -127,7 +144,6 @@
             <p><strong>Dr. Jane Smith</strong></p>
             <p>2:00 PM, Today</p>
             <p>Introduction to Neural Networks</p>
-            <a href="#" class="view-details">View Details</a>
         </div>
         
         <!-- Session Card 2 -->
@@ -135,7 +151,6 @@
             <p><strong>Prof. John Doe</strong></p>
             <p>11:00 AM, Tomorrow</p>
             <p>Advanced React Patterns</p>
-            <a href="#" class="view-details">View Details</a>
         </div>
         
         <!-- Session Card 3 -->
@@ -143,7 +158,6 @@
             <p><strong>Sarah Johnson</strong></p>
             <p>3:30 PM, 25th Oct</p>
             <p>Data Visualization Techniques</p>
-            <a href="#" class="view-details">View Details</a>
         </div>
     </div>
 </div>
@@ -152,7 +166,7 @@
     </div>
 
     <!-- FontAwesome for icons -->
-    <script src="mentorscripts.js">
+    <script src="facultyDashboard.js">
     </script>
 
 </body>
