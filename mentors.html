@@ -5,22 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentor Match</title>
     <link rel="stylesheet" href="mentorstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
     <!-- Sidebar -->
     <div class="sidebar">
         <div class="logo">MentorMatch</div>
         <ul class="sidebar-menu">
-            <li>Home</li>
-            <li>Mentors</li>
-            <li>My Bookings</li>
-            <li>Wishlist</li>
+            <li class="sidebar-item selected">
+                <span>Home</span>
+                <span class="arrow">⮜</span>
+            </li>
+            <li class="sidebar-item">
+                <span>Mentors</span>
+                <span class="arrow">⮜</span>
+            </li>
+            <li class="sidebar-item">
+                <span>My Bookings</span>
+                <span class="arrow">⮜</span>
+            </li>
+            <li class="sidebar-item">
+                <span>Wishlist</span>
+                <span class="arrow">⮜</span>
+            </li>
         </ul>
+        
+        <!-- Sidebar Bottom -->
         <ul class="sidebar-bottom">
-            <li>Settings</li>
-            <li>Logout</li>
+            <li class="sidebar-item">
+                <span>Settings</span>
+                <span class="arrow">⮜</span>
+            </li>
+            <li class="sidebar-item">
+                <span>Logout</span>
+                <span class="arrow">⮜</span>
+            </li>
         </ul>
     </div>
+    
 
     <!-- Main Content -->
     <div class="main-content">
@@ -28,18 +51,21 @@
         <div class="left-content">
             
             <!-- Navbar -->
+
 <div class="navbar">
     <div class="search-bar-container">
         <input type="text" class="search-bar" placeholder="Search...">
     </div>
     <div class="nav-icons">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-bell"></i>
+        <!-- Initially using the 'far' class for outlined icons -->
+        <i class="far fa-star" id="star-icon"></i>
+        <i class="far fa-bell" id="bell-icon"></i>
         <div class="profile-circle">
-            <img src="profile.jpg" alt="Profile">
+            <img src="images/mentors/hoodie.jpg" alt="Profile">
         </div>
     </div>
 </div>
+
 
 
             <!-- White Box for Middle Section -->

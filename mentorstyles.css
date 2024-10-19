@@ -10,11 +10,10 @@ body {
     min-height: 100vh;
     background-color: #f4f4f4;
 }
-
 /* Sidebar Styling */
 .sidebar {
     width: 250px;
-    background-color: #1a73e8;
+    background-color: #0b2342;
     color: white;
     display: flex;
     flex-direction: column;
@@ -32,17 +31,46 @@ body {
 
 .sidebar-menu, .sidebar-bottom {
     list-style: none;
+    padding: 0;
 }
 
-.sidebar-menu li, .sidebar-bottom li {
-    margin: 15px 0;
-    cursor: pointer;
+.sidebar-item {
+    position: relative;
+    padding: 10px;
     font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    transition: transform 0.2s; /* Smooth transition for enlargement */
 }
 
-.sidebar-menu li:hover, .sidebar-bottom li:hover {
-    color: #ffcc00;
+/* Hover effect */
+.sidebar-item:hover {
+    transform: scale(1.1); /* Enlarge on hover */
 }
+
+
+
+.sidebar-item.selected .arrow {
+    display: inline; /* Show arrow for the selected item */
+}
+
+/* Arrow styles */
+.arrow {
+    display: none; /* Hidden by default */
+    margin-left: auto; /* Align to the right */
+}
+
+/* No background on hover or selected */
+.sidebar-item:hover,
+.sidebar-item.selected {
+    background-color: transparent; /* No background on hover or selected */
+}
+
+
+
+
 
 /* Main Content Styling */
 .main-content {
@@ -88,14 +116,16 @@ body {
     gap: 20px; /* Space between the icons */
 }
 
+/* By default, the icons use the 'far' class for outline */
 .nav-icons i {
     font-size: 24px;
     cursor: pointer;
     color: #1a73e8;
+    padding: 5px;  /* Spacing inside the border */
 }
 
 .nav-icons i:hover {
-    color: #ffcc00;
+    color: blue;
 }
 
 .profile-circle {
@@ -109,6 +139,12 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* When clicked, change the outline to filled */
+.selected {
+    color: #0758fa !important;
+    border-color: #0004ff;
 }
 
 
@@ -151,7 +187,7 @@ h2 {
 }
 
 .book-session-btn {
-    background-color: #1a73e8;
+    background-color:  #0b2342;
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
@@ -160,7 +196,7 @@ h2 {
 }
 
 .book-session-btn:hover {
-    background-color: #155ab6;
+    background-color:#054fe3;
 }
 
 .prof-image {
