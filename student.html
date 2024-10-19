@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Match</title>
+    <link rel="stylesheet" href="student.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">MentorMatch</div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item selected">
+                <a href="student.html">
+                    <span>Home</span><span class="arrow">⮜</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="mentors.html">
+                    <span>Mentors</span><span class="arrow">⮜</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="booking.html">
+                    <span>My Bookings</span><span class="arrow">⮜</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="wishlist.html">
+                    <span>Wishlist</span><span class="arrow">⮜</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="upcoming.html">
+                    <span>Upcoming Sessions</span><span class="arrow">⮜</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="sidebar-bottom">
+            <li class="sidebar-item">Settings <span class="arrow">⮜</span></li>
+            <li class="sidebar-item">Logout <span class="arrow">⮜</span></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="search-bar-container">
+                <input type="text" class="search-bar" placeholder="Search...">
+            </div>
+            <div class="nav-icons">
+                <i class="far fa-star"></i>
+                <i class="far fa-bell"></i>
+                <div class="profile-circle">
+                    <img src="images/mentors/hoodie.jpg" alt="Profile">
+                </div>
+            </div>
+        </div>
+
+        <!-- Student Info -->
+        <div class="student-info">
+            <p><strong>Hi John Doe!</strong></p>
+            <p>3rd Year, B.Sc. Computer Science</p>
+            <p>XYZ University</p>
+        </div>
+
+        <!-- Mentor Cards -->
+        <div class="white-box">
+            <h2>Mentors</h2>
+            <div class="mentor-cards-container">
+                <div class="mentor-card">
+                    <img src="https://via.placeholder.com/50" alt="Prof Image" class="prof-image">
+                    <div class="mentor-info">
+                        <p>Dr. Jane Smith</p>
+                        <p>Machine Learning</p>
+                    </div>
+                    <button class="book-session-btn">Book Session</button>
+                </div>
+
+                <div class="mentor-card">
+                    <img src="https://via.placeholder.com/50" alt="Prof Image" class="prof-image">
+                    <div class="mentor-info">
+                        <p>Prof. John Doe</p>
+                        <p>Web Development</p>
+                    </div>
+                    <button class="book-session-btn">Book Session</button>
+                </div>
+
+                <div class="mentor-card">
+                    <img src="https://via.placeholder.com/50" alt="Prof Image" class="prof-image">
+                    <div class="mentor-info">
+                        <p>Sarah Johnson</p>
+                        <p>Data Science</p>
+                    </div>
+                    <button class="book-session-btn">Book Session</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
