@@ -53,7 +53,7 @@ signInBtn.addEventListener('click', () => {
     const validStudent = students.find(student => student.email === email && student.password === password);
 
     if (validStudent) {
-        alert(`Welcome, ${validStudent.name}!`);
+      window.location.href = "student.html";
     } else {
         alert('User not registered');
     }

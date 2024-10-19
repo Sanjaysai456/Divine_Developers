@@ -129,7 +129,7 @@ h2 {
     }
 
     .card {
-        width: 60%; /* Take up more space on smaller screens */
+        width: 75%; /* Take up more space on smaller screens */
         max-width: none; /* Remove max-width to fill available space */
         height: auto; /* Adjust height to fit content */
     }
