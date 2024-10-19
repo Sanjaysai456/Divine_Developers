@@ -33,12 +33,12 @@ function loadMentors() {
         card.innerHTML = `
             <img src="${mentor.img}" alt="Mentor Image" class="prof-image">
             <div class="mentor-info">
-                <p><strong>${mentor.name}</strong></p>
-                <p>${mentor.position}</p>
-                <p>Session Time: ${mentor.sessionTime}</p>
+            <p><strong>${mentor.name}</strong></p>
+            <p>${mentor.position}</p>
+            <p>Session Time: ${mentor.sessionTime}</p>
             </div>
             <div>
-                <button class="book-session-btn">Book Session</button>
+            <button class="book-session-btn" onclick="window.location.href='session.html'">Book Session</button>
             </div>
         `;
 

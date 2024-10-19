@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Match</title>
+    <link rel="stylesheet" href="mentorstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Card Container for Square Cards */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Square Session Card */
+        .session-square-card {
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 250px;
+        }
+
+        .session-square-card p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .session-square-card strong {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .view-details {
+            margin-top: auto;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .view-details:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">MentorMatch</div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item selected">
+                <a href="student.html">
+                <span>Home</span>
+                </a>
+                <span class="arrow">⮜</span>
+            </li>
+            <li class="sidebar-item">
+                <a href="mentors.html">
+                <span>Mentors</span>
+                </a>
+                <span class="arrow">⮜</span>
+            </li>
+            <li class="sidebar-item">
+                <a href="bookings.html">
+                <span>My Bookings</span>
+                </a>
+                <span class="arrow">⮜</span>
+            </li>
+            <li class="sidebar-item">
+                <a href="wishlist.html">
+                <span>Wishlist</span>
+                </a>
+                <span class="arrow">⮜</span>
+            </li>
+        </ul>
+
+        <ul class="sidebar-bottom">
+            <li class="sidebar-item">
+                <span>Settings</span>
+                <span class="arrow">⮜</span>
+            </li>
+            <li class="sidebar-item">
+                <span>Logout</span>
+                <span class="arrow">⮜</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="left-content">
+            <!-- Navbar -->
+            <div class="navbar">
+                <div class="search-bar-container">
+                    <input type="text" class="search-bar" placeholder="Search...">
+                </div>
+                <div class="nav-icons">
+                    <i class="far fa-star" id="star-icon"></i>
+                    <i class="far fa-bell" id="bell-icon"></i>
+                    <div class="profile-circle">
+                        <img src="images/mentors/hoodie.jpg" alt="Profile">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Square Session Cards -->
+            <div class="card-container">
+                <div class="session-square-card">
+                    <p><strong>Prof. Jane Smith</strong></p>
+                    <p>2:00 PM, Today</p>
+                    <p>Introduction to Neural Networks</p>
+                    <a href="#" class="view-details">View Details</a>
+                </div>
+
+                <div class="session-square-card">
+                    <p><strong>Dr. John Doe</strong></p>
+                    <p>11:00 AM, Tomorrow</p>
+                    <p>Advanced React Patterns</p>
+                    <a href="#" class="view-details">View Details</a>
+                </div>
+
+                <div class="session-square-card">
+                    <p><strong>Sarah Johnson</strong></p>
+                    <p>3:30 PM, 25th Oct</p>
+                    <p>Data Visualization Techniques</p>
+                    <a href="#" class="view-details">View Details</a>
+                </div>
+
+                <div class="session-square-card">
+                    <p><strong>Prof. Alan Walker</strong></p>
+                    <p>10:00 AM, 27th Oct</p>
+                    <p>AI Ethics and Governance</p>
+                    <a href="#" class="view-details">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FontAwesome for icons -->
+    <script src="mentorscripts.js"></script>
+</body>
+</html>

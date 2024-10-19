@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Session Details</title>
+    <style>
+        /* Global Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* Professor Name and Image Section */
+        .professor-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .professor-info img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .professor-details {
+            flex: 1;
+        }
+
+        .professor-details h2 {
+            margin: 0;
+            color: #4c5baf;
+        }
+
+        .professor-details p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        /* Schedule Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4c53af;
+            color: white;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        /* Specialties Section */
+        .specialties {
+            margin-top: 30px;
+        }
+
+        .specialties h3 {
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .marquee-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 150px;
+            background-color: #f0f0f5;
+            border-radius: 8px;
+        }
+
+        .marquee-content {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            position: absolute;
+            white-space: nowrap;
+            animation: scroll 15s linear infinite;
+        }
+
+        .specialty-card {
+            background-color: #4c53af;
+            color: white;
+            width: 200px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .specialty-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Professor Name and Image -->
+    <div class="professor-info">
+        <img src="images/professor.jpg" alt="Professor Image">
+        <div class="professor-details">
+            <h2>Dr. John Doe</h2>
+            <p><strong>Expertise:</strong> Artificial Intelligence, Machine Learning, Data Science</p>
+            <p><strong>Experience:</strong> 15+ years in academia and industry</p>
+            <p><strong>Email:</strong> john.doe@example.com</p>
+        </div>
+    </div>
+
+    <!-- Schedule Table -->
+    <h1>Weekly Schedule</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Session Topic</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>10:00 AM - 11:00 AM</td>
+                <td>Introduction to Neural Networks</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>2:00 PM - 3:00 PM</td>
+                <td>Supervised Learning Algorithms</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>4:00 PM - 5:00 PM</td>
+                <td>Deep Learning Basics</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Specialties Section -->
+    <div class="specialties">
+        <h3>Professor's Specialties</h3>
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <div class="specialty-card">Artificial Intelligence</div>
+                <div class="specialty-card">Machine Learning</div>
+                <div class="specialty-card">Natural Language Processing</div>
+                <div class="specialty-card">Computer Vision</div>
+                <div class="specialty-card">AI Ethics and Governance</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
